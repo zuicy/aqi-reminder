@@ -18,25 +18,25 @@
 
 配置  
 -------------
-######由于本人很懒，代码很短，所以没有将所有要修改的内容放在开头，带来的不便（你来打我啊，逃    
+###### 由于本人很懒，代码很短，所以没有将所有要修改的内容放在开头，带来的不便（你来打我啊，逃    
 在下载的文件中找到**aqi-reminder-for-pushbullet.py**进行编辑  
 
 
-###修改appkey，选择你所在的城市
+### 修改appkey，选择你所在的城市
    
 ```r = requests.get('http://www.pm25.in/api/querys/only_aqi.json?city=your_city&token=your_appkey',timeout=5)```  
 在文档中把上面的**your_appkey**替换为你的**appkey**,上面的**your_city**替换为你要选择的城市  
-####城市规则：
+#### 城市规则：
 请使用城市的**拼音**  
 例如： "city=guangzhou"  
 **重名情况**：泰州的拼音为"taizhoushi"，台州的拼音为"taizhou"  
 
-###修改access tokens
+### 修改access tokens
   
 ```accesstoken='your_accesstoken'```  
 在文档中将上面的**your_accesstoken**替换为你的**accesstoken**
 
-###自定义推文
+### 自定义推文
   
 下面的为默认推文  
 `push = pb.push_note("冻死自己（误", "空气质量不错，开窗通风吧")`  
@@ -55,7 +55,7 @@
 如果你用的是Linux系统，我推荐你使用cronjob。  
 不会使用？[教程](https://linux.cn/article-4924-1.html)接好。  
   
-##完成，好好享受吧
+## 完成，好好享受吧
 
 意见与反馈
 ------------------
